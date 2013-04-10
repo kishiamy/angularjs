@@ -13,6 +13,7 @@
     %script{type: "text/javascript", src: "https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js" }
     %script{type: "text/javascript", src: "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" }
     = javascript_include_tag  "all"
-  
-  %body
+
+  %body(ng-controller="PhoneListCtrl")
+
     = yield

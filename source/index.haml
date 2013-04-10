@@ -1,4 +1,10 @@
 ---
 title: Angularjs Example
 ---
-%p Nothing here {{'yet' + '!'}}
+#search
+  Search:
+  %input(ng-model="query")
+%ul
+  %li(ng-repeat="phone in phones | filter:query")
+    %span {{phone.name}}
+    %p {{phone.snippet}}
